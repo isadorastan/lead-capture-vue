@@ -53,8 +53,6 @@ export default {
 
     firebase.initializeApp(firebaseConfig);
     this.messagesRef = firebase.database().ref('contactformmessages');
-
-    console.log(process.env.VUE_APP_API_KEY);
   },
   computed: {
     submitButtonDisabled() {
