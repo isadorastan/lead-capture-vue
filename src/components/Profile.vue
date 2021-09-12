@@ -7,9 +7,9 @@
         </div>
 
         <div class="medias">
-            <div class="card">Github</div>
-            <div class="card">Youtube</div>
-            <div class="card">Telegram</div>
+            <div class="card"><a href="https://github.com/isadorastan"> Github</a></div>
+            <div class="card"><a href="https://www.youtube.com/channel/UCRhKK6VrISnIWPJjYxBPKnA">Youtube</a></div>
+            <div class="card"><a href="https://t.me/papodedev1">Telegram</a></div>
         </div>
 
         <div class="card" style="background-color:#7A79FF">
@@ -57,6 +57,7 @@ export default {
         .card {
             padding: 16px 30px;
             border-radius: 8px;
+            cursor: pointer;
 
             & + .card {
                 margin-top: 15px;
