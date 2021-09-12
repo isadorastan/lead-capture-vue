@@ -1,21 +1,23 @@
 <template>
   <div class="contact-form">
       <template v-if="showForm">
-      <form id="contactForm" class="contact-form">
-          <h2>Fique por dentro</h2>
-          <p>Cadastre seu melhor email para ficar sabendo quando uma nova turma será aberta!</p>
+        <router-link to="/" class="go-back">⬅️ Voltar</router-link>
+        <form id="contactForm" class="contact-form">
+            <h2>Fique por dentro</h2>
+            <p>Cadastre seu melhor email para ficar sabendo quando uma nova turma será aberta!</p>
 
-          <input class="name" type="text" id="name" placeholder="Nome" v-model="newLead.name"/>
-          <input class="email" type="email" id="email" placeholder="Email" v-model="newLead.email"/>
+            <input class="name" type="text" id="name" placeholder="Nome" v-model="newLead.name"/>
+            <input class="email" type="email" id="email" placeholder="Email" v-model="newLead.email"/>
 
-          <button type="submit" class="submit-button" @click="submitForm" :disabled="submitButtonDisabled">Submit</button>
-      </form>
+            <button type="submit" class="submit-button" @click="submitForm" :disabled="submitButtonDisabled">Submit</button>
+        </form>
       </template>
       <template v-else>
         <div class="success-message">
             <i data-feather="check"></i>
             <p>Obrigada! Você receberá avisos em primeira mão sobre novas turmas do curso!</p>
         </div>
+        <router-link to="/" class="go-back" style="text-align: center;">⬅️ Voltar</router-link>
       </template>
   </div>
 </template>
@@ -82,12 +84,23 @@ export default {
 <style scoped lang="less">
 .contact-form {
   padding: 20px;
+  color: white;
+  display:flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+
+  .go-back {
+    text-decoration: none;
+    color: white;
+  }
+
 }
 
 form {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 30px;
+    max-width: 400px;
+    height: fit-content !important;
     background: #16102F;
     color: white;
     padding: 20px 30px;
@@ -144,6 +157,7 @@ form {
     align-items: center;
     text-align: center;
     max-width: 450px;
+    margin-bottom: 30px;
 
     svg { 
         margin-right: 10px;
