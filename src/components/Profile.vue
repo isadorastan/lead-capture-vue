@@ -58,6 +58,7 @@ export default {
             padding: 16px 30px;
             border-radius: 8px;
             cursor: pointer;
+            width: 100%;
 
             & + .card {
                 margin-top: 15px;
@@ -76,14 +77,9 @@ export default {
 
             .card {
                 background: #160F30;
-            }
-
-            @media screen and (max-width: 600px)  {
-                .card {
-                    padding: 16px;
-                    width: 100%;
-                    text-align: center;
-                }
+                width: 100%;
+                text-align: center;
+                padding: 16px;
             }
 
             .card + .card {
