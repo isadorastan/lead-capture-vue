@@ -21,7 +21,7 @@
         </div>
 
         <div class="card" style="background-color:#d829e5">
-            <a href="https://acesse.cubos.academy/imersao-javascript-papodedev">🏆 Imersão em Js - Cubos</a>
+            <a href="https://acesse.cubos.academy/imersao-javascript-papodedev2">🏆 Imersão em Js - Cubos</a>
         </div>
 
     </div>
